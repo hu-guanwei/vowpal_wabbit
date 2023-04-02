@@ -44,6 +44,7 @@ int main(int argc, char* argv[])
                               "Compat is now deprecated so it is recommended that stdout or stderr is chosen"));
 
   auto main_logger = VW::io::create_default_logger();
+  main_logger.info("Hello, world!");
   try
   {
     // support multiple vw instances for training of the same datafile for the same instance
